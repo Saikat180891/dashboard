@@ -12,9 +12,9 @@ export class ChartComponent implements OnInit {
   options: any = {
     chart: {}
   };
-  data: any;
+  data: any = data;
   dataObserver = new BehaviorSubject<any>(data);
-  ngOnInit() {
+  ngOnInit(): void {
     this.initialize();
   }
 
