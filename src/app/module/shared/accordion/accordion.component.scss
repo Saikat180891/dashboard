@@ -1,0 +1,18 @@
+@import "../../../global/color";
+body
+  .ui-accordion
+  .ui-accordion-header:not(.ui-state-disabled).ui-state-active
+  a {
+  background-color: $nav-color;
+  border: none;
+}
+ul {
+  li {
+    cursor: pointer;
+    padding: 5px 0;
+  }
+}
+
+.link-active {
+  color: red;
+}

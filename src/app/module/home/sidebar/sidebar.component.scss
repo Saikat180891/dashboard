@@ -1,0 +1,17 @@
+@import "../../../global/color";
+.sidebar-container {
+  border-right: 1px solid $nav-color;
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 2px 0 2px $shadow-sm;
+
+  div.brand {
+    color: $nav-color;
+    font-size: 25px;
+    line-height: 4rem;
+    text-align: center;
+  }
+}

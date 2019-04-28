@@ -1,0 +1,15 @@
+<div class="body">
+  <div class="navbar-wrapper">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="sidebar">
+    <app-sidebar
+      [links]="links"
+      (selectedLink)="onRouterChange($event)"
+    ></app-sidebar>
+  </div>
+  <div class="main-content">
+    <!-- <app-card></app-card> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

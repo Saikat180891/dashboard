@@ -1,0 +1,27 @@
+@import "../../../global/color";
+.input-box {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 0.4rem;
+
+    .ng-required {
+      color: rgb(252, 0, 0);
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: 1px solid #999999;
+    padding-left: 7px;
+    background-color: #eeeeee;
+  }
+
+  input:focus {
+    border: 1px solid $nav-color;
+    box-shadow: 0 0 5px rgba($color: $nav-color, $alpha: 0.25);
+  }
+}

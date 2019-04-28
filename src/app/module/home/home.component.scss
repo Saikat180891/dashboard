@@ -1,0 +1,26 @@
+@import "../../global/flexbox";
+@import "../../global/color";
+div.body {
+  position: relative;
+  height: 100%;
+
+  div.navbar-wrapper {
+    width: calc(100% - 20rem);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  div.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  div.main-content {
+    padding: 5rem 1rem 0 21rem;
+  }
+}

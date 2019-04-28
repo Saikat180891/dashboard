@@ -1,0 +1,10 @@
+<div class="sidebar-container">
+  <div class="brand">Saptadipa Product</div>
+
+  <div class="sidebar-link">
+    <app-accordion
+      [content]="links"
+      (selectedLink)="selectedLink.emit($event)"
+    ></app-accordion>
+  </div>
+</div>

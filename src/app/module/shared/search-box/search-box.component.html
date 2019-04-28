@@ -1,0 +1,11 @@
+<div class="search-box">
+  <div class="search-icon">
+    <mat-icon>search</mat-icon>
+  </div>
+  <input type="search" [placeholder]="placeholder" />
+  <div class="search-results">
+    <ul (click)="onSearch($event.target.value)">
+      <li>element 1</li>
+    </ul>
+  </div>
+</div>

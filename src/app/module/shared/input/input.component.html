@@ -1,0 +1,12 @@
+<div class="input-box">
+  <label [for]="label"
+    >{{ label }}
+    <span class="ng-required" *ngIf="required">*</span>
+  </label>
+  <input
+    [type]="type"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    [id]="label"
+  />
+</div>

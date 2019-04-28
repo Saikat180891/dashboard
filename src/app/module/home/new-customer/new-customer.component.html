@@ -1,0 +1,227 @@
+<div class="form">
+  <mat-card>
+    <mat-card-title>
+      Add new customer
+    </mat-card-title>
+    <div class="card-content">
+      <mat-card-content>
+        <form [formGroup]="form">
+          <section>
+            <div class="form-group">
+              <div class="c3 mr1">
+                <app-input
+                  label="First name"
+                  type="text"
+                  required="true"
+                  placeholder="Ex: John"
+                ></app-input>
+              </div>
+              <div class="c3 mr1">
+                <app-input
+                  label="Last name"
+                  type="text"
+                  placeholder="Ex: Smith"
+                ></app-input>
+              </div>
+              <div class="c3">
+                <app-input
+                  label="Age"
+                  type="number"
+                  placeholder="Ex: 23"
+                ></app-input>
+              </div>
+            </div>
+            <div class="form-group form-group-no-mb">
+              <div class="c3 mr1">
+                <app-input
+                  label="PAN Card No."
+                  type="text"
+                  required="true"
+                  placeholder="Ex: BGSD8831F"
+                ></app-input>
+              </div>
+              <div class="c3 mr1">
+                <app-input
+                  label="Aadhar No."
+                  type="number"
+                  required="true"
+                  placeholder="Ex: 1234567891012345"
+                ></app-input>
+              </div>
+            </div>
+          </section>
+          <section formGroupName="contact">
+            <div class="form-group form-group-no-mb">
+              <div class="c4 mr1">
+                <app-input
+                  label="Mobile No."
+                  type="tel"
+                  required="true"
+                  placeholder="Ex: 9432322123"
+                ></app-input>
+              </div>
+              <div class="c4 mr1">
+                <app-input
+                  label="Alternate Mobile No."
+                  type="tel"
+                  placeholder="Ex: 9432322123"
+                ></app-input>
+              </div>
+              <div class="c4 mr1">
+                <app-input
+                  label="Email"
+                  type="email"
+                  required="true"
+                  placeholder="Ex: john.smith@outlook.com"
+                ></app-input>
+              </div>
+              <div class="c4">
+                <app-input
+                  label="Alternate Email"
+                  type="email"
+                  placeholder="Ex: john.smith@outlook.com"
+                ></app-input>
+              </div>
+            </div>
+          </section>
+          <section formGroupName="address">
+            <div class="form-group">
+              <div class="c1">
+                <app-input
+                  label="Address 1"
+                  type="email"
+                  required="true"
+                  placeholder="Ex: #432, xyz street, near lake garden"
+                ></app-input>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="c1">
+                <app-input
+                  label="Address 2"
+                  type="email"
+                  placeholder="Ex: #432, xyz street, near lake garden"
+                ></app-input>
+              </div>
+            </div>
+            <div class="form-group form-group-no-mb">
+              <div class="c4 mr1">
+                <app-input
+                  label="City"
+                  type="text"
+                  required="true"
+                  placeholder="Ex: Bangalore"
+                ></app-input>
+              </div>
+              <div class="c4 mr1">
+                <app-input
+                  label="State"
+                  type="text"
+                  required="true"
+                  placeholder="Ex: Karnataka"
+                ></app-input>
+              </div>
+              <div class="c4 mr1">
+                <app-input
+                  label="Country"
+                  type="text"
+                  required="true"
+                  placeholder="Ex: India"
+                ></app-input>
+              </div>
+              <div class="c4">
+                <app-input
+                  label="Pin code"
+                  type="number"
+                  required="true"
+                  placeholder="Ex: 560054"
+                ></app-input>
+              </div>
+            </div>
+          </section>
+          <section formGroupName="business">
+            <div class="form-group">
+              <div class="c1">
+                <app-input
+                  label="Organization Name"
+                  type="text"
+                  required="true"
+                  placeholder="Ex: ABC Corp."
+                ></app-input>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="c2 mr1">
+                <app-input
+                  label="License No."
+                  type="text"
+                  required="true"
+                  placeholder="Ex: ABC1234XYZ"
+                ></app-input>
+              </div>
+              <div class="c2">
+                <app-input
+                  label="GST No."
+                  type="text"
+                  required="true"
+                  placeholder="Ex: 12345365454FSA"
+                ></app-input>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="c1">
+                <app-input
+                  label="Organization Address"
+                  type="text"
+                  placeholder="Ex: #432, xyz street, near lake garden"
+                ></app-input>
+              </div>
+            </div>
+            <div class="form-group form-group-no-mb">
+              <div class="c4 mr1">
+                <app-input
+                  label="City"
+                  type="text"
+                  required="true"
+                  placeholder="Ex: Bangalore"
+                ></app-input>
+              </div>
+              <div class="c4 mr1">
+                <app-input
+                  label="State"
+                  type="text"
+                  required="true"
+                  placeholder="Ex: Karnataka"
+                ></app-input>
+              </div>
+              <div class="c4 mr1">
+                <app-input
+                  label="Country"
+                  type="text"
+                  required="true"
+                  placeholder="Ex: India"
+                ></app-input>
+              </div>
+              <div class="c4">
+                <app-input
+                  label="Pin code"
+                  type="number"
+                  required="true"
+                  placeholder="Ex: 560054"
+                ></app-input>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="form-group form-group-no-mb flex-end">
+              <div class="c6 btn-group flex-end">
+                <button mat-stroked-button>Reset</button>
+                <button mat-flat-button color="primary">Save</button>
+              </div>
+            </div>
+          </section>
+        </form>
+      </mat-card-content>
+    </div>
+  </mat-card>
+</div>

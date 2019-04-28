@@ -1,0 +1,15 @@
+<div class="accordion-wrapper">
+  <p-accordion *ngIf="contents.length">
+    <p-accordionTab [header]="content.heading" *ngFor="let content of contents">
+      <ul *ngIf="content.subHeading">
+        <li
+          *ngFor="let subHeading of content.subHeading"
+          (click)="onLinkSelected(subHeading.route)"
+          routerLinkActive="link-active"
+        >
+          {{ subHeading.label }}
+        </li>
+      </ul>
+    </p-accordionTab>
+  </p-accordion>
+</div>

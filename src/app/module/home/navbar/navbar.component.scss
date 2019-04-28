@@ -1,0 +1,14 @@
+@import "../../../global/flexbox";
+@import "../../../global/color";
+
+.nav {
+  background-color: $nav-color;
+  height: 4rem;
+  box-shadow: 0 2px 2px $shadow-sm;
+  @include flex-row-C-SB();
+  padding: 0 2rem;
+
+  div.search {
+    width: 30rem;
+  }
+}
