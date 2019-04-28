@@ -1,7 +1,10 @@
-export const discretebarChart = {
+import * as d3 from "d3";
+
+export const discretebarChartOptions = {
   chart: {
     type: "discreteBarChart",
     height: 450,
+    width: 1100,
     margin: {
       top: 20,
       right: 20,
@@ -33,14 +36,34 @@ export const data = [
   {
     key: "Cumulative Return",
     values: [
-      { label: "A", value: -29.765957771107 },
-      { label: "B", value: 0 },
-      { label: "C", value: 32.807804682612 },
-      { label: "D", value: 196.45946739256 },
-      { label: "E", value: 0.19434030906893 },
-      { label: "F", value: -98.079782601442 },
-      { label: "G", value: -13.925743130903 },
-      { label: "H", value: -5.1387322875705 }
+      { label: "Orders", value: randomize() },
+      { label: "New Customers", value: randomize() },
+      { label: "Existing Customers", value: randomize() },
+      { label: " Orders Delivered", value: randomize() },
+      { label: "Order Not delivered", value: randomize() },
+      { label: "Orders cancelled by customer", value: randomize() }
     ]
   }
 ];
+
+function randomize() {
+  const maximum = 100;
+  const minimum = 0;
+  return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+}
+
+export function generateData() {
+  return [
+    {
+      key: "Cumulative Return",
+      values: [
+        { label: "Orders", value: randomize() },
+        { label: "New Customers", value: randomize() },
+        { label: "Existing Customers", value: randomize() },
+        { label: " Orders Delivered", value: randomize() },
+        { label: "Order Not delivered", value: randomize() },
+        { label: "Orders cancelled by customer", value: randomize() }
+      ]
+    }
+  ];
+}

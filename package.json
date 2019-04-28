@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
     "core-js": "^2.5.4",
+    "d3": "^3.5.17",
     "ng2-nvd3": "^2.0.0",
     "primeicons": "^1.0.0",
     "primeng": "^7.1.2",

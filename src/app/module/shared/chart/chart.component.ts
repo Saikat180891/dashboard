@@ -1,21 +1,38 @@
 import { Component, OnInit } from "@angular/core";
-import { discretebarChart, data } from "./chart-settings";
+import { discretebarChartOptions, data, generateData } from "./chart-settings";
+import { BehaviorSubject, Observable } from "rxjs";
 declare let d3: any;
+
 @Component({
   selector: "app-chart",
   templateUrl: "./chart.component.html",
-  styleUrls: [
-    "./chart.component.scss",
-    "../../../../../node_modules/nvd3/build/nv.d3.css"
-  ]
+  styleUrls: ["./chart.component.scss"]
 })
 export class ChartComponent implements OnInit {
-  data;
-  option;
-  constructor() {
-    this.data = data;
-    this.option = discretebarChart;
+  options: any = {
+    chart: {}
+  };
+  data: any;
+  dataObserver = new BehaviorSubject<any>(data);
+  ngOnInit() {
+    this.initialize();
   }
 
-  ngOnInit() {}
+  initialize(): void {
+    this.options = discretebarChartOptions;
+    setInterval(() => {
+      this.setChartData(generateData());
+      this.getData().subscribe(data => {
+        this.data = data;
+      });
+    }, 5000);
+  }
+
+  getData(): Observable<any> {
+    return this.dataObserver.asObservable();
+  }
+
+  setChartData(chartData: any): void {
+    this.dataObserver.next(chartData);
+  }
 }

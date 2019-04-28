@@ -9,7 +9,7 @@ import { FooterColumnGroup } from "primeng/components/common/shared";
 })
 export class NewCustomerComponent implements OnInit {
   form = new FormGroup({
-    firstname: new FormControl("", [Validators.required]),
+    firstname: new FormControl("hello", [Validators.required]),
     lastname: new FormControl(""),
     age: new FormControl(""),
     pan: new FormControl("", [Validators.required]),
