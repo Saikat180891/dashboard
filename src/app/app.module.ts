@@ -8,7 +8,6 @@ import { NvD3Module } from "ng2-nvd3";
 import { AppComponent } from "./app.component";
 import { AuthComponent } from "./module/auth/auth.component";
 import { HomeComponent } from "./module/home/home.component";
-import { SharedComponent } from "./module/shared/shared.component";
 import { SignInComponent } from "./module/auth/sign-in/sign-in.component";
 import { SignOutComponent } from "./module/auth/sign-out/sign-out.component";
 import { AuthWrapperComponent } from "./module/auth/auth-wrapper/auth-wrapper.component";
@@ -31,8 +30,8 @@ import { ExistingCustomerComponent } from "./module/home/existing-customer/exist
 import { DropdownComponent } from "./module/shared/dropdown/dropdown.component";
 import "d3";
 import "nvd3";
-import { InputComponent } from './module/shared/input/input.component';
-import { CustomerCardComponent } from './module/home/customer-card/customer-card.component';
+import { InputComponent } from "./module/shared/input/input.component";
+import { CustomerCardComponent } from "./module/home/customer-card/customer-card.component";
 const routes: Route[] = [
   {
     path: "",
@@ -70,7 +69,6 @@ const routes: Route[] = [
     AppComponent,
     AuthComponent,
     HomeComponent,
-    SharedComponent,
     SignInComponent,
     SignOutComponent,
     AuthWrapperComponent,

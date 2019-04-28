@@ -1,13 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { Router } from "@angular/router";
-export interface Route {
-  label: string;
-  route: string;
-}
-export interface Content {
-  heading: string;
-  subHeading?: Route[];
-}
+import { Content } from "./content.model";
+
 @Component({
   selector: "app-accordion",
   templateUrl: "./accordion.component.html",

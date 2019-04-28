@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Content } from "../shared/accordion/accordion.component";
 import { Router } from "@angular/router";
+import { Content } from "../shared/accordion/content.model";
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
