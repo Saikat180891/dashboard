@@ -2,7 +2,7 @@
   <div class="navbar-wrapper">
     <app-navbar></app-navbar>
   </div>
-  <div class="sidebar">
+  <div class="sidebar" *ngIf="links.length">
     <app-sidebar
       [links]="links"
       (selectedLink)="onRouterChange($event)"

@@ -23,10 +23,10 @@ export const discretebarChartOptions = {
     },
     duration: 500,
     xAxis: {
-      axisLabel: "X Axis"
+      axisLabel: "Metrices"
     },
     yAxis: {
-      axisLabel: "Y Axis",
+      axisLabel: "Range",
       axisLabelDistance: -10
     }
   }
@@ -36,12 +36,20 @@ export const data = [
   {
     key: "Cumulative Return",
     values: [
-      { label: "Orders", value: randomize() },
-      { label: "New Customers", value: randomize() },
-      { label: "Existing Customers", value: randomize() },
-      { label: " Orders Delivered", value: randomize() },
-      { label: "Order Not delivered", value: randomize() },
-      { label: "Orders cancelled by customer", value: randomize() }
+      {
+        label: "Orders",
+        value: randomize(),
+        color: "#006eff"
+      },
+      { label: "New Customers", value: randomize(), color: "#006eff" },
+      { label: "Existing Customers", value: randomize(), color: "#006eff" },
+      { label: " Orders Delivered", value: randomize(), color: "#006eff" },
+      { label: "Order Not delivered", value: randomize(), color: "#006eff" },
+      {
+        label: "Orders cancelled by customer",
+        value: randomize(),
+        color: "#006eff"
+      }
     ]
   }
 ];
@@ -57,12 +65,16 @@ export function generateData() {
     {
       key: "Cumulative Return",
       values: [
-        { label: "Orders", value: randomize() },
-        { label: "New Customers", value: randomize() },
-        { label: "Existing Customers", value: randomize() },
-        { label: " Orders Delivered", value: randomize() },
-        { label: "Order Not delivered", value: randomize() },
-        { label: "Orders cancelled by customer", value: randomize() }
+        { label: "Orders", value: randomize(), color: "#006eff" },
+        { label: "New Customers", value: randomize(), color: "#006eff" },
+        { label: "Existing Customers", value: randomize(), color: "#006eff" },
+        { label: " Orders Delivered", value: randomize(), color: "#006eff" },
+        { label: "Order Not delivered", value: randomize(), color: "#006eff" },
+        {
+          label: "Orders cancelled by customer",
+          value: randomize(),
+          color: "#006eff"
+        }
       ]
     }
   ];

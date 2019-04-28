@@ -1,70 +1,20 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Content } from "../shared/accordion/content.model";
+import { LINKS } from "src/app/app-constants";
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
   styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
-  links: Content[] = [
-    {
-      heading: "Stats",
-      subHeading: [
-        {
-          label: "Dashboard",
-          route: "dashboard"
-        }
-      ]
-    },
-    {
-      heading: "Customers",
-      subHeading: [
-        {
-          label: "New Customers",
-          route: "newcoustomer"
-        },
-        {
-          label: "Existing Customer",
-          route: "existingcustomer"
-        }
-      ]
-    },
-    {
-      heading: "Orders",
-      subHeading: [
-        {
-          label: "Pending",
-          route: "pending"
-        },
-        {
-          label: "Delivered",
-          route: "delivered"
-        },
-        {
-          label: "In Progress",
-          route: "inprocess"
-        }
-      ]
-    },
-    {
-      heading: "Sales",
-      subHeading: [
-        {
-          label: "Sales",
-          route: "sales"
-        }
-      ]
-    },
-    {
-      heading: "Inventory",
-      subHeading: []
-    }
-  ];
+  links: Content[] = [];
 
   constructor(public router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.links = LINKS;
+  }
 
   onRouterChange($event: string): void {
     this.router.navigate(["home/" + $event]);
