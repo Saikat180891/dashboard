@@ -21,13 +21,17 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
+    "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
     "d3": "^3.5.17",
+    "file-saver": "^2.0.1",
     "ng2-nvd3": "^2.0.0",
+    "ngx-export-as": "^1.2.2",
     "primeicons": "^1.0.0",
     "primeng": "^7.1.2",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
+    "web-animations-js": "^2.3.1",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

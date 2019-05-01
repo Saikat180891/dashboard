@@ -1,0 +1,27 @@
+[
+  {
+    "name": "John Smith",
+    "phoneNumber": "9243256546",
+    "address": " Plot No. 3, Surya Sapphire, Hosur Road, Near D-Mart, 1st Phase, Electronic City, Bengaluru, Karnataka 560100"
+  },
+  {
+    "name": "Brad Pitt",
+    "phoneNumber": "8784232423",
+    "address": " Plot No. 3, Surya Sapphire, Hosur Road, Near D-Mart, 1st Phase, Electronic City, Bengaluru, Karnataka 560100"
+  },
+  {
+    "name": "Leonardo D'Caprio",
+    "phoneNumber": "1324325434",
+    "address": " Plot No. 3, Surya Sapphire, Hosur Road, Near D-Mart, 1st Phase, Electronic City, Bengaluru, Karnataka 560100"
+  },
+  {
+    "name": "Ryan Gosling",
+    "phoneNumber": "5756867544",
+    "address": " Plot No. 3, Surya Sapphire, Hosur Road, Near D-Mart, 1st Phase, Electronic City, Bengaluru, Karnataka 560100"
+  },
+  {
+    "name": "Chris Pine",
+    "phoneNumber": "3454656732",
+    "address": " Plot No. 3, Surya Sapphire, Hosur Road, Near D-Mart, 1st Phase, Electronic City, Bengaluru, Karnataka 560100"
+  }
+]

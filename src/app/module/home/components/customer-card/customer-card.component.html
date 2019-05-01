@@ -1,0 +1,21 @@
+<div class="user-actions">
+  <button mat-raised-button color="primary" (click)="saveFileAsCSV()">
+    Save as CSV
+  </button>
+  <button mat-raised-button color="primary" (click)="saveFileAsPDF()">
+    Save as PDF
+  </button>
+</div>
+<div id="table">
+  <div class="card-wrapper" *ngFor="let user of users; let i = index">
+    <app-card>
+      <section class="header">
+        <div class="user-information">
+          <span>{{ user.name }}</span>
+          <span>{{ user.phoneNumber }}</span>
+          <span>{{ user.address }}</span>
+        </div>
+      </section>
+    </app-card>
+  </div>
+</div>

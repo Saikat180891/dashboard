@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
-import { Content } from "../../shared/accordion/accordion.component";
-import { Router } from "@angular/router";
+import { Content } from "src/app/module/shared/accordion/content.model";
 
 @Component({
   selector: "app-sidebar",
@@ -13,10 +12,4 @@ export class SidebarComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
-  // onRouterChange($event: string): void {
-  //   this.selectedLink.emit($event)
-  //   this.router.navigate(["/home/" + $event]);
-  //   console.log($event);
-  // }
 }

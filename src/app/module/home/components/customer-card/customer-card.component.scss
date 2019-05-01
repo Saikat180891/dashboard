@@ -1,0 +1,28 @@
+div.card-wrapper {
+  margin-bottom: 1rem;
+
+  section.header {
+    display: flex;
+    justify-content: space-between;
+
+    .user-information {
+      display: flex;
+      flex-direction: column;
+
+      span:first-child {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+.user-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+
+  button:first-child {
+    margin-right: 1rem;
+  }
+}
